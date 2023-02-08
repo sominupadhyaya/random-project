@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.square{
+    height: 4em;
+    width: 4em;
+    background-color: red;
+    margin: 1em;
+}
+.special-square{
+    animation-name: together;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+button{ 
+    position: absolute;
+    font-size: 1em;
+    padding: 0.3em;
+    background-color: cyan;
+}
+
+[button-main]{
+    bottom : 5em;
+}
+
+[button-sec]{
+    bottom: 2em;
+}
+
+@keyframes  together{
+    0%{
+        margin : 1.5em;
+        transform: rotate(0deg);
+    }
+    100%{
+        margin: 0.1em;
+        transform: rotate(2160deg);
+    }
+}
